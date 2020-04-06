@@ -12,17 +12,32 @@
         <h2>Register With Us</h2>
         <div class="form__control">
           <label for="username">Username</label>
-          <input id="username" type="text" placeholder="Enter Username" />
+          <input
+            id="username"
+            type="text"
+            placeholder="Enter Username"
+            data-length="3"
+          />
           <small>Error message</small>
         </div>
         <div class="form__control">
           <label for="email">E-mail</label>
-          <input id="email" type="text" placeholder="Enter email" />
+          <input
+            id="email"
+            type="text"
+            placeholder="Enter email"
+            onkeyup="validateEmail()"
+          />
           <small>Error message</small>
         </div>
         <div class="form__control">
           <label for="password">Password</label>
-          <input id="password" type="text" placeholder="Enter password" />
+          <input
+            id="password"
+            type="text"
+            placeholder="Enter password"
+            data-length="7"
+          />
           <small>Error message</small>
         </div>
         <div class="form__control">
